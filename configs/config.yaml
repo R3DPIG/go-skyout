@@ -1,0 +1,25 @@
+# 服务配置
+app:
+  name: go-skyout
+  port: 8080
+  mode: debug # debug / release
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: ""
+  database: sky-take-out
+  charset: utf8mb4
+  max_open_conns: 100
+  max_idle_conns: 10
+
+redis:
+  addr: 127.0.0.1:6379
+  password: ""
+  db: 0
+
+jwt:
+  secret: ""
+  expire_hours: 72
+  issuer: go-skyout
